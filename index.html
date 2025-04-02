@@ -195,7 +195,9 @@
 //header small screen
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector("nav");
+    const navUl = document.querySelector("nav ul");
     const toggleButton = document.createElement("div");
+
     toggleButton.classList.add("menu-toggle");
     toggleButton.innerHTML = "&#9776;"; // Hamburger icon
 
@@ -204,6 +206,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     nav.insertBefore(toggleButton, nav.firstChild);
+
+    // Ensure menu is hidden on resize
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            nav.classList.remove("active");
+        }
+    });
 });
 
 //about me

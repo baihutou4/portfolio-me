@@ -78,6 +78,17 @@ nav ul li a:hover::after{
     color:#ff004f;
 }
 
+.menu-toggle {
+    display: none; /* Hide by default */
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+}
+
 @media (max-width: 768px) {
     #header{
         background-image: url(images/Chong3.png);
