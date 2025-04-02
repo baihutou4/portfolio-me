@@ -192,6 +192,21 @@
 </div>
 
 <script>
+//header small screen
+document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector("nav");
+    const toggleButton = document.createElement("div");
+    toggleButton.classList.add("menu-toggle");
+    toggleButton.innerHTML = "&#9776;"; // Hamburger icon
+
+    toggleButton.addEventListener("click", function () {
+        nav.classList.toggle("active");
+    });
+
+    nav.insertBefore(toggleButton, nav.firstChild);
+});
+
+//about me
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -207,15 +222,15 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-//this part for portfolio
+//projects for portfolio
 const projects = [
     ["images/sc1.png", "images/sc2.png"], // Project 1 images
     ["images/p1.png", "images/p2.png", "images/p3.png", "images/p4.png", "images/p5.png", "images/p6.png", "images/p7.png", "images/p8.png", "images/p9.png", "images/p10.png"],  // Project 2 images
-    ["images/t1.png", "images/t2.png", "images/t3.png", "images/t5.png"], // Fixed comma issue here
-    ["images/e1.png", "images/e2.png"] // Fixed comma issue here
+    ["images/t1.png", "images/t2.png", "images/t3.png", "images/t5.png"],
+    ["images/e1.png", "images/e2.png"]
 ];
 
-// Select all `.portfolio .row` elements to ensure we're only working with the portfolio section
+// Select all .portfolio .row elements to ensure we're only working with the portfolio section
 document.querySelectorAll("#portfolio .row").forEach((row, index) => {
     let images = projects[index]; 
     let currentIndex = 0;
@@ -223,33 +238,19 @@ document.querySelectorAll("#portfolio .row").forEach((row, index) => {
 
     if (!images) return; // Ensure there's an image set for the project
 
-    projectImage.src = images[currentIndex]; // Ensure first image is set properly
-    projectImage.style.opacity = 1; // Ensure first image is visible
-
     const prevBtn = row.querySelector(".prevBtn");
     const nextBtn = row.querySelector(".nextBtn");
 
-    function changeImage(newIndex) {
-        projectImage.style.transition = "opacity 0.4s ease-in-out";
-        projectImage.style.opacity = 0; // Fade out
-
-        setTimeout(() => {
-            projectImage.src = images[newIndex];
-            projectImage.style.opacity = 1; // Fade in
-        }, 400); // Delay matches transition duration
-    }
-
     prevBtn.addEventListener("click", function () {
         currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-        changeImage(currentIndex);
+        projectImage.src = images[currentIndex];
     });
 
     nextBtn.addEventListener("click", function () {
         currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-        changeImage(currentIndex);
+        projectImage.src = images[currentIndex];
     });
 });
-
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxrE9wzPVVq_QAnXtQsNiKXMnmZa7gbHdgaZQ9MVV4E7BtRNTYl7YJOAoGMVSB1JgRI/exec';
 const form = document.forms['submit-to-google-sheet'];
