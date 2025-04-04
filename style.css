@@ -391,6 +391,21 @@ nav ul li a:hover::after {
         max-width: 90%; /* Prevent text from going edge-to-edge */
         margin: 0 auto; /* Center the paragraph text */
     }
+
+    #skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Makes the section take full height of the viewport */
+        text-align: center; /* Centers text horizontally */
+    }
+    
+    .about-col-2 h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Centers the h1 horizontally */
+    }
 }
 
 /* ---------------portfolio---------------------- */
