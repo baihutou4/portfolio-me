@@ -17,12 +17,17 @@ body {
     background-image: url(images/chong5.png);
     background-size: cover;
     background-position: center;
-    position: relative;
-    overflow: hidden;
+    position: fixed; /* Fix it in place */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Push it behind the content */
 }
 
+/* Add padding to the container so content starts below the fixed header */
 .container {
     padding: 10px 10%;
+    position: relative; /* Keep everything positioned properly */
+    z-index: 2; /* Ensure it appears above the background */
 }
 
 html {
@@ -205,6 +210,9 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0;
     color: #ababab;
+    background: black; /* Ensure it fully covers header */
+    position: relative;
+    margin-top: 100vh; /* Start after the full height of header */
     opacity: 0;
     transform: translateY(70px);
     animation: fadeInUp 1.5s ease-out forwards;
