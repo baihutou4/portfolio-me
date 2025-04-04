@@ -27,6 +27,12 @@ body {
     z-index: 2; /* Ensure it appears above the background */
 }
 
+#typed-role {
+    color: red;
+    font-weight: bold;  /* Optional: Makes the text bold */
+}
+
+
 html {
     scroll-behavior: auto;
 }
@@ -353,6 +359,13 @@ nav ul li a:hover::after {
         align-items: center;
     }
 
+    .about-col-1 img {
+        display: block;
+        margin: 0 auto;
+        width: 80%; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
     /* Ensure the about-title appears under the image */
     .about-col-1 {
         flex-basis: 100%;
@@ -368,12 +381,6 @@ nav ul li a:hover::after {
         font-size: 36px; /* Adjust the font size to be smaller on phones */
         margin-top: 20px; /* Add space above the subtitle */
         text-align: center;
-    }
-
-    /* Adjust the image size for mobile */
-    .about-col-1 img {
-        width: 100%;
-        border-radius: 15px;
     }
 }
 
