@@ -714,14 +714,16 @@ nav ul li a:hover::after {
 #contact {
     background: #000;
     color: white;
-    padding: 100px 0;
+    padding: 100px 20px; /* Added horizontal padding for small screens */
 }
+
 .contact-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 .contact-left {
     text-align: left;
     flex: 1;
@@ -729,23 +731,29 @@ nav ul li a:hover::after {
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .contact-left h1 {
     margin-bottom: 30px;
     font-size: 84px;
 }
+
 .contact-left p {
     font-size: 20px;
     margin: 10px 0;
 }
+
 .social-icons {
     margin-top: 10px;
+    display: flex;
+    gap: 10px;
 }
+
 .social-icons a {
     color: white;
-    margin: 5px;
     font-size: 24px;
     text-decoration: none;
 }
+
 .contact-right {
     text-align: right;
     flex: 1;
@@ -754,7 +762,7 @@ nav ul li a:hover::after {
     gap: 15px;
     align-items: flex-end;
     margin-top: 40px;
-    width: 100%; /* Ensure full width */
+    width: 100%;
 }
 
 .btn {
@@ -766,42 +774,65 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 18px;
     margin-top: 40px;
-    align-self: flex-end; /* Ensure alignment */
+    align-self: flex-end;
 }
+
 .btn:hover {
     background: #b00823;
 }
-.contact-right input, .contact-right textarea {
-    width: 200%;
-    max-width: 675px;
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
     padding: 15px;
     background: #222;
     border: none;
     color: white;
     border-radius: 5px;
-    font-size: 20px;
-    margin-bottom: 15px; /* Adjust spacing as needed */
+    font-size: 18px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
+
 .contact-right textarea {
     height: 150px;
 }
 
+/* Mobile fixes */
 @media (max-width: 768px) {
     .contact-content {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        width: 60%; /* Reduce width for smaller screens */
-        max-width: 400px; /* Set a max width for better scaling */
-        padding: 20px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-left h1 {
+        font-size: 40px;
     }
 
     .contact-left,
     .contact-right {
         width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-right {
+        align-items: center;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        max-width: 100%;
+    }
+
+    .btn {
+        align-self: center;
     }
 
     .social-icons {
         justify-content: center;
     }
 }
-
