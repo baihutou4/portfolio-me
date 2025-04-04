@@ -110,9 +110,6 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
-.header-text h1 span {
-    color: #ff004f;
-}
 
 /* Mobile Menu */
 .menu-toggle {
@@ -213,7 +210,6 @@ nav ul li a:hover::after {
     transform: translateY(30px);
     animation: slideUp 1.5s ease-out forwards;
     animation-delay: 0.5s;
-    margin-top: 100px; /* Add space below the header */
 }
 
 .row {
@@ -370,7 +366,6 @@ nav ul li a:hover::after {
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-bottom: 3px solid #ff004f; /* Underline effect */
     display: inline-block;
     padding-bottom: 10px;
 }
