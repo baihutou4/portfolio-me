@@ -703,8 +703,9 @@ nav ul li a:hover::after {
 @media (max-width: 768px) {
     #portfolio h1 {
         font-size: 40px;
-        text-align: center; /* Centers the h1 element */
-        margin: 0 auto; /* Ensures the element is centered if it's a block element */
+        text-align: center;
+        margin: 0 auto;
+        display: block; /* Ensure it's treated as a block element */
     }
     
 }
