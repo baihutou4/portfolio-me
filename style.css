@@ -17,7 +17,8 @@ body {
     background-image: url(images/chong5.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Keeps the background static */
+    background-attachment: fixed;
+    padding-top: 50px; /* Adjust padding to ensure the content doesn't get hidden */
 }
 
 /* Add padding to the container so content starts below the fixed header */
@@ -213,6 +214,7 @@ nav ul li a:hover::after {
     transform: translateY(30px);
     animation: slideUp 1.5s ease-out forwards;
     animation-delay: 0.5s;
+    margin-top: 100px; /* Add space below the header */
 }
 
 .row {
