@@ -389,6 +389,10 @@ nav ul li a:hover::after {
     animation-play-state: paused;
 }
 
+#portfolio h1 {
+    font-size: 70px;
+}
+
 .sub-title {
     color: white;
     text-align: center;
@@ -668,9 +672,12 @@ nav ul li a:hover::after {
 }
 
 @media (max-width: 768px) {
-    .portfolio {
-        font-size: 24px; /* Adjust the font size to your preference */
+    #portfolio h1 {
+        font-size: 40px;
+        text-align: center; /* Centers the h1 element */
+        margin: 0 auto; /* Ensures the element is centered if it's a block element */
     }
+    
 }
 
 /*-----------------------------contact---------------------*/
