@@ -24,8 +24,12 @@
 
     </nav>
     <div class="header-text">
-        <h1>Hi, I'm Chong Wen <span>Xiang</span><br> from Johor Bahru <br> I'm a Web developer</h1>
-    </div>
+        <h1>
+          Hi, I'm Chong Wen <span>Xiang</span><br>
+          from Johor Bahru <br>
+          I'm a <span id="typed-role"></span>
+        </h1>
+      </div>
 </div>
 </div>
 
@@ -280,6 +284,15 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message));
 });
 
+var typed = new Typed('#typed-role', {
+    strings: ['Web Developer', 'Frontend Developer', 'Backend Developer'],
+    typeSpeed: 60,
+    backSpeed: 40,
+    backDelay: 1000,
+    loop: true
+  });
+
+  
 </script>
 </body>
 </html>
