@@ -372,9 +372,6 @@ nav ul li a:hover::after {
         margin-bottom: 20px; /* Add some space below the image */
     }
 
-    .about-col-2 {
-        flex-basis: 100%;
-    }
 
     /* Adjust the subtitle size and positioning */
     .sub-title {
@@ -382,6 +379,26 @@ nav ul li a:hover::after {
         margin-top: 20px; /* Add space above the subtitle */
         text-align: center;
     }
+
+    .about-col-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px; /* Add some padding around the content */
+        max-width: 100%; /* Ensure the content does not extend past the screen */
+        margin: 0 auto; /* Center the content horizontally */
+        flex-basis: 100%;
+    }
+
+
+    .about-col-2 p {
+        font-size: 16px; /* Adjust paragraph font size */
+        line-height: 1.6;
+        max-width: 90%; /* Prevent text from going edge-to-edge */
+    }
+
 }
 
 /* ---------------portfolio---------------------- */
