@@ -443,7 +443,7 @@ video.projectVideo {
 
 /*--------------------animation------------------------*/
 /* Animation keyframes */
-@keyframes slideInTop {
+@keyframes slideTop {
     0% {
       opacity: 0;
       transform: translateY(-50px);
@@ -452,6 +452,14 @@ video.projectVideo {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  
+  /* Apply animation with dynamic delay */
+  .nav ul li {
+    display: inline-block;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
   }
   
   @keyframes slideInLeft {
