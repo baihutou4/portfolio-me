@@ -86,9 +86,7 @@
         <div class="row">
             <div class="portfolio-col-1">
                 <div class="carousel">
-                    <button class="prevBtn">&#10094;</button>
                     <img class="projectImage" src="images/sc1.png" alt="Project Screenshot">
-                    <button class="nextBtn">&#10095;</button>
                 </div>
             </div>
             <div class="portfolio-col-2">
@@ -106,9 +104,7 @@
         <div class="row">
             <div class="portfolio-col-1">
                 <div class="carousel">
-                    <button class="prevBtn">&#10094;</button>
                     <img class="projectImage" src="images/p1.png" alt="Project Screenshot">
-                    <button class="nextBtn">&#10095;</button>
                 </div>
             </div>
             <div class="portfolio-col-2">
@@ -127,9 +123,7 @@
 <div class="row">
     <div class="portfolio-col-1">
         <div class="carousel">
-            <button class="prevBtn">&#10094;</button>
             <img class="projectImage" src="images/t1.png" alt="Project Screenshot">
-            <button class="nextBtn">&#10095;</button>
         </div>
     </div>
     <div class="portfolio-col-2">
@@ -145,9 +139,7 @@
 <div class="row">
     <div class="portfolio-col-1">
         <div class="carousel">
-            <button class="prevBtn">&#10094;</button>
             <img class="projectImage" src="images/e1.png" alt="Project Screenshot">
-            <button class="nextBtn">&#10095;</button>
         </div>
     </div>
     <div class="portfolio-col-2">
@@ -251,17 +243,41 @@ document.querySelectorAll("#portfolio .row").forEach((row, index) => {
 
     if (!images) return; // Ensure there's an image set for the project
 
-    const prevBtn = row.querySelector(".prevBtn");
-    const nextBtn = row.querySelector(".nextBtn");
+    // Detect mouse click position
+    projectImage.addEventListener("click", function (event) {
+        const imageWidth = projectImage.offsetWidth;
+        const clickPosition = event.clientX; // Get the X coordinate of the click
 
-    prevBtn.addEventListener("click", function () {
-        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-        projectImage.src = images[currentIndex];
+        // If clicked on the left side of the image
+        if (clickPosition < imageWidth / 2) {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        } else {
+            // If clicked on the right side of the image
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        }
+
+        projectImage.src = images[currentIndex]; // Update the image
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const animatedElements = document.querySelectorAll(
+        "#portfolio, .portfolio-col-1, .portfolio-col-2, .carousel, .projectImage, .projectVideo"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = "running";
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, {
+        threshold: 0.1
     });
 
-    nextBtn.addEventListener("click", function () {
-        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-        projectImage.src = images[currentIndex];
+    animatedElements.forEach(el => {
+        observer.observe(el);
     });
 });
 
@@ -284,14 +300,27 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message));
 });
 
-var typed = new Typed('#typed-role', {
-    strings: ['Web Developer', 'Frontend Developer', 'Backend Developer'],
-    typeSpeed: 60,
-    backSpeed: 40,
-    backDelay: 1000,
-    loop: true
-  });
+function opentab(tabName) {
+    const tabLinks = document.querySelectorAll(".tab-links");
+    const tabContents = document.querySelectorAll(".tab-contents");
 
+    // Remove 'active' classes
+    tabLinks.forEach(link => link.classList.remove("active-link"));
+    tabContents.forEach(content => {
+        content.classList.remove("active-tab");
+        content.style.display = "none"; // Hide all tabs first
+    });
+
+    // Show selected tab
+    const targetTab = document.getElementById(tabName);
+    targetTab.style.display = "block"; // Must be visible before animation runs
+    void targetTab.offsetWidth; // Force reflow to restart animation
+    targetTab.classList.add("active-tab");
+
+    // Activate clicked link
+    const clickedLink = Array.from(tabLinks).find(link => link.textContent.toLowerCase().includes(tabName.toLowerCase()));
+    if (clickedLink) clickedLink.classList.add("active-link");
+}
 
 </script>
 </body>
