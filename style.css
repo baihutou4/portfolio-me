@@ -392,12 +392,10 @@ nav ul li a:hover::after {
         margin: 0 auto; /* Center the paragraph text */
     }
 
-    #skills {
+    #tab-contents {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh; /* Makes the section take full height of the viewport */
-        text-align: center; /* Centers text horizontally */
     }
     
     .about-col-2 h1 {
