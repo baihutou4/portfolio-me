@@ -381,6 +381,12 @@ nav ul li a:hover::after {
 
     /* Adjust the subtitle size and positioning */
     .sub-title {
+        font-size: 24px; /* Reduce font size */
+        padding: 0 5px; /* Ensures text stays within screen boundaries */
+        word-wrap: break-word; /* Prevents overflow */
+    }
+
+    .about-col-2 p {
         font-size: 28px; /* Adjusted for mobile readability */
         padding: 0 10px;
         word-wrap: break-word;
@@ -389,13 +395,6 @@ nav ul li a:hover::after {
         overflow-wrap: break-word; /* Extra safety for long words */
         margin: 0 auto;
         box-sizing: border-box;
-    }
-
-    .about-col-2 p {
-        font-size: 16px; /* Adjust paragraph font size */
-        line-height: 1.6;
-        max-width: 90%; /* Prevent text from going edge-to-edge */
-        margin: 0 auto; /* Center the paragraph text */
     }
 
     #tab-contents {
