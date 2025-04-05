@@ -387,13 +387,13 @@ nav ul li a:hover::after {
     }
 
     .about-col-2 p {
-        font-size: 28px; /* Adjusted for mobile readability */
-        padding: 0 10px;
-        word-wrap: break-word;
-        max-width: 100vw; /* Full screen width */
-        text-align: center; /* Center the text */
-        overflow-wrap: break-word; /* Extra safety for long words */
-        margin: 0 auto;
+        font-size: 28px; /* Large readable font */
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        width: 100vw; /* Full screen width */
+        text-align: center;
+        overflow-wrap: break-word;
         box-sizing: border-box;
     }
 
