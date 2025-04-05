@@ -251,6 +251,7 @@ nav ul li a:hover::after {
 
 .sub-title {
     font-size: 60px;
+    padding: 0 5px;
     font-weight: 600;
     color: #fff;
     opacity: 0;
@@ -380,9 +381,9 @@ nav ul li a:hover::after {
 
     /* Adjust the subtitle size and positioning */
     .sub-title {
-        font-size: 36px; /* Adjust the font size to be smaller on phones */
-        margin-top: 20px; /* Add space above the subtitle */
-        text-align: center;
+        font-size: 24px; /* Reduce font size */
+        padding: 0 5px; /* Ensures text stays within screen boundaries */
+        word-wrap: break-word; /* Prevents overflow */
     }
 
     .about-col-2 p {
