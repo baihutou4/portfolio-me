@@ -387,14 +387,10 @@ nav ul li a:hover::after {
     }
 
     .about-col-2 p {
-        font-size: 28px; /* Large readable font */
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0;
-        width: 100vw; /* Full screen width */
-        text-align: center;
-        overflow-wrap: break-word;
-        box-sizing: border-box;
+        font-size: 16px; /* Adjust paragraph font size */
+        line-height: 1.6;
+        max-width: 90%; /* Prevent text from going edge-to-edge */
+        margin: 0 auto; /* Center the paragraph text */
     }
 
     #tab-contents {
