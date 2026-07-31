@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,455 +10,631 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
 
-<div id="header">
-    <div class="container">
-        <nav>
-             <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.pdf" download>Resume</a></li>
+                </ul>
 
-    </nav>
-    <div class="header-text animate-slide-top delay-1">
-        <h1>
-          Hi, I'm Chong Wen Xiang<br>
-          from Johor Bahru <br>
-          I'm a <span id="typed-role"></span>
-        </h1>
-      </div>
-</div>
-</div>
-
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/CHONG WEN XIANG.jpg">
+            </nav>
+            <div class="header-text animate-slide-top delay-1">
+                <h1>
+                    Hi, I'm Chong Wen Xiang<br>
+                    from Johor Bahru <br>
+                    I'm a <span id="typed-role"></span>
+                </h1>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Dedicated and skilled Web Developer with a strong foundation in
-                computer science and a proven capability in building innovative web
-                applications. Possessing hands-on experience in various programming
-                languages and technologies, I am passionate about leveraging my skills
-                in JavaScript, Python, and AWS to drive high-quality web development
-                solutions. A strong communicator who is a hard worker and fluent in
-                both Chinese and English, I thrive in collaborative environments and am
-                keen to contribute to impactful projects.</p>
+        </div>
+    </div>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experince')">Exprience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/CHONG WEN XIANG.jpg">
                 </div>
-                <div class="tab-contents active-tab" id ="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Building Android Apps</li>
-                        <li><span>Language</span><br>HTML, CSS, Javascript, Java, Python, C++ , Node.js</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id = "experince">
-                    <ul>
-                        <li><span>2023 - Internship</span><br>SoftEngine</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id ="education">
-                    <ul>
-                        <li><span>2022 - 2025</span><br>University Dunkul Abdul Rahman</li>
-                    </ul>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Dedicated and skilled Web Developer with a strong foundation in
+                        computer science and a proven capability in building innovative web
+                        applications. Possessing hands-on experience in various programming
+                        languages and technologies, I am passionate about leveraging my skills
+                        in JavaScript, Python, and AWS to drive high-quality web development
+                        solutions. A strong communicator who is a hard worker and fluent in
+                        both Chinese and English, I thrive in collaborative environments and am
+                        keen to contribute to impactful projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Exprience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android Apps</li>
+                            <li>
+                                <span>Language</span>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Node.js</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Frameworks & Tools</span>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">Next.js</span>
+                                    <span class="skill-tag">Nest.js</span>
+                                    <span class="skill-tag">GraphQL</span>
+                                    <span class="skill-tag">Relay</span>
+                                    <span class="skill-tag">Prisma</span>
+                                    <span class="skill-tag">Kysely</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">Tailwind CSS</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>AI-Assisted Development</span>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Claude Code</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>2023 - Internship</span><br>SoftEngine</li>
+                            <li><span>Jul 2025 - Feb 2026</span><br>Junior Fullstack Developer - Crosscode Studio</li>
+                            <li><span>Feb 2026 - Present</span><br>Senior Fullstack Developer - Crosscode Studio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2025</span><br>University Dunkul Abdul Rahman</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">Portfolio</h1>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
 
-        <!-- Project 1 -->
-        <div class="row">
-            <div class="portfolio-col-1">
-                <div class="carousel">
-                    <img class="projectImage" src="images/sc1.png" alt="Project Screenshot">
-                    <div class="dots-container">
-                        <!-- Dots will be dynamically added here -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="other">Other Projects</button>
+                <button class="filter-btn" data-filter="koinonia">Koinonia.cloud</button>
+            </div>
+
+            <div class="projects-list">
+
+                <!-- Project 1 -->
+                <div class="row" data-category="other">
+                    <div class="portfolio-col-1">
+                        <div class="carousel">
+                            <img class="projectImage" src="images/sc1.png" alt="Project Screenshot">
+                            <div class="dots-container">
+                                <!-- Dots will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-2">
+                        <h2>Science Video Platform</h2>
+                        <p>This platform is designed to make science education engaging and accessible. It features a
+                            wide range of videos, quizzes, and interactive content that help students and enthusiasts
+                            learn complex science topics in an easy and interactive way.</p>
+                        <h3>Tech Stack:</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>AWS</li>
+                            <li>DynamoDB</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-col-2">
-                <h2>Science Video Platform</h2>
-                <p>This platform is designed to make science education engaging and accessible. It features a wide range of videos, quizzes, and interactive content that help students and enthusiasts learn complex science topics in an easy and interactive way.</p>
-                <h3>Tech Stack:</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>AWS</li>
-                    <li>DynamoDB</li>     
-                </ul>
-            </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="row">
-            <div class="portfolio-col-1">
-                <div class="carousel">
-                    <img class="projectImage" src="images/p1.png" alt="Project Screenshot">
-                    <div class="dots-container">
-                        <!-- Dots will be dynamically added here -->
+                <!-- Project 2 -->
+                <div class="row" data-category="other">
+                    <div class="portfolio-col-1">
+                        <div class="carousel">
+                            <img class="projectImage" src="images/p1.png" alt="Project Screenshot">
+                            <div class="dots-container">
+                                <!-- Dots will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-2">
+                        <h2>Budget Management App</h2>
+                        <p>Stay on top of your finances with this intuitive mobile app. Designed for individuals and
+                            families, this app allows you to track income and expenses, set financial goals, and get
+                            insights into your spending habits. Perfect for managing personal budgets and staying
+                            financially organized.</p>
+                        <h3>Tech Stack:</h3>
+                        <ul>
+                            <li>Android Studio</li>
+                            <li>Firebase</li>
+                            <li>Java</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-col-2">
-                <h2>Budget Management App</h2>
-                <p>Stay on top of your finances with this intuitive mobile app. Designed for individuals and families, this app allows you to track income and expenses, set financial goals, and get insights into your spending habits. Perfect for managing personal budgets and staying financially organized.</p>
-                <h3>Tech Stack:</h3>
-                <ul>
-                    <li>Android Studio</li>
-                    <li>Firebase</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Project 3 -->
-        <div class="row">
-            <div class="portfolio-col-1">
-                <div class="carousel">
-                    <img class="projectImage" src="images/t1.png" alt="Project Screenshot">
-                    <div class="dots-container">
-                        <!-- Dots will be dynamically added here -->
+                <!-- Project 3 -->
+                <div class="row" data-category="other">
+                    <div class="portfolio-col-1">
+                        <div class="carousel">
+                            <img class="projectImage" src="images/t1.png" alt="Project Screenshot">
+                            <div class="dots-container">
+                                <!-- Dots will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-2">
+                        <h2>YouTube AI Summary Short Generator</h2>
+                        <p>Leverage the power of AI to automatically create summary videos from YouTube content. This
+                            project generates short, engaging videos with subtitles, audio, and visuals, summarizing the
+                            main points of a YouTube video. Ideal for quick learning and content consumption.</p>
+                        <h3>Tech Stack:</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>AI</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-col-2">
-                <h2>YouTube AI Summary Short Generator</h2>
-                <p>Leverage the power of AI to automatically create summary videos from YouTube content. This project generates short, engaging videos with subtitles, audio, and visuals, summarizing the main points of a YouTube video. Ideal for quick learning and content consumption.</p>
-                <h3>Tech Stack:</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>AI</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Project 4 -->
-        <div class="row">
-            <div class="portfolio-col-1">
-                <div class="carousel">
-                    <img class="projectImage" src="images/e1.png" alt="Project Screenshot">
-                    <div class="dots-container">
-                        <!-- Dots will be dynamically added here -->
+                <!-- Project 4 -->
+                <div class="row" data-category="other">
+                    <div class="portfolio-col-1">
+                        <div class="carousel">
+                            <img class="projectImage" src="images/e1.png" alt="Project Screenshot">
+                            <div class="dots-container">
+                                <!-- Dots will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-2">
+                        <h2>Online Book Store</h2>
+                        <p>Explore an extensive library of books from various genres in this online bookstore. Users can
+                            browse, search, and purchase their favorite books, enjoy reviews, and keep track of their
+                            reading history. The platform is designed to offer a seamless and enjoyable shopping
+                            experience for book lovers.</p>
+                        <h3>Tech Stack:</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-col-2">
-                <h2>Online Book Store</h2>
-                <p>Explore an extensive library of books from various genres in this online bookstore. Users can browse, search, and purchase their favorite books, enjoy reviews, and keep track of their reading history. The platform is designed to offer a seamless and enjoyable shopping experience for book lovers.</p>
-                <h3>Tech Stack:</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Project 5 -->
-        <div class="row">
-            <div class="portfolio-col-1">
-                <div class="carousel">
-                    <img class="projectImage" src="images/f1.png" alt="Project Screenshot">
-                    <div class="dots-container">
-                        <!-- Dots will be dynamically added here -->
+                <!-- Project 5 -->
+                <div class="row" data-category="other">
+                    <div class="portfolio-col-1">
+                        <div class="carousel">
+                            <img class="projectImage" src="images/f1.png" alt="Project Screenshot">
+                            <div class="dots-container">
+                                <!-- Dots will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-2">
+                        <h2>Portable Face Recognition Intruder Detection System</h2>
+                        <p>This project leverages the power of face recognition technology to detect intruders in
+                            real-time using a mobile device as the camera. The system can be set up to monitor any
+                            location, providing continuous face detection with multiple camera support. It allows users
+                            to track suspicious activity and alert them instantly, ensuring heightened security, whether
+                            you're at home or on the go.</p>
+                        <h3>Tech Stack:</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>AI Training</li>
+                            <li>DeepFace</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="portfolio-col-2">
-                <h2>Portable Face Recognition Intruder Detection System</h2>
-                <p>This project leverages the power of face recognition technology to detect intruders in real-time using a mobile device as the camera. The system can be set up to monitor any location, providing continuous face detection with multiple camera support. It allows users to track suspicious activity and alert them instantly, ensuring heightened security, whether you're at home or on the go.</p>
-                <h3>Tech Stack:</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
-                    <li>CSS</li>
-                    <li>AI Training</li>
-                    <li>DeepFace</li>
-                </ul>
+
+                <!-- Project 6 - Koinonia.cloud (consolidated) -->
+                <div class="row" data-category="koinonia">
+                    <div class="portfolio-col-1">
+                        <div class="carousel">
+                            <img class="projectImage" src="images/k1.png" alt="Project Screenshot">
+                            <div class="dots-container">
+                                <!-- Dots will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-col-2">
+                        <h2>Koinonia.cloud</h2>
+                        <p>Koinonia.cloud is a social media platform built for churches, made up of several modules
+                            working together as one community app.</p>
+
+                        <div class="module-tabs">
+                            <p class="module-tab-links active-module-link"
+                                onclick="openModuleTab(event, 'mod-onboarding')">Onboarding</p>
+                            <p class="module-tab-links" onclick="openModuleTab(event, 'mod-chat')">Chat</p>
+                            <p class="module-tab-links" onclick="openModuleTab(event, 'mod-event')">Event</p>
+                            <p class="module-tab-links" onclick="openModuleTab(event, 'mod-group')">Group</p>
+                            <p class="module-tab-links" onclick="openModuleTab(event, 'mod-post')">Post</p>
+                        </div>
+
+                        <div class="module-tab-contents active-module-tab" id="mod-onboarding">
+                            <p>Covers the onboarding experience along with sign up and sign in flows, guiding new
+                                members smoothly into their church's community space.</p>
+                        </div>
+                        <div class="module-tab-contents" id="mod-chat">
+                            <p>A real-time chat module letting church members message one another and communicate within
+                                groups, keeping the community connected beyond service hours.</p>
+                        </div>
+                        <div class="module-tab-contents" id="mod-event">
+                            <p>Handles event questionnaires, member registration, and refund policy management, so
+                                churches can organize and run events end-to-end on the platform.</p>
+                        </div>
+                        <div class="module-tab-contents" id="mod-group">
+                            <p>Lets churches create and manage community groups, giving members a space to gather around
+                                ministries, interests, or fellowship circles.</p>
+                        </div>
+                        <div class="module-tab-contents" id="mod-post">
+                            <p>A social feed style post feature, letting members share posts with text and images so
+                                churches can post updates, testimonies, and moments.</p>
+                        </div>
+
+                        <p class="demo-note"><i class="fas fa-circle-play"></i> Live demo available upon request during
+                            interviews.</p>
+
+                        <h3>Tech Stack:</h3>
+                        <ul>
+                            <li>React.js</li>
+                            <li>Next.js</li>
+                            <li>Nest.js</li>
+                            <li>GraphQL</li>
+                            <li>Relay</li>
+                            <li>Prisma</li>
+                            <li>Kysely</li>
+                            <li>Docker</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</div>
 
 
 
-<!-- Contact Section -->
-<div id="contact">
-    <div class="container">
-        <div class="contact-content">
-            <div class="contact-left">
-                <h1>Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i> chong4wenxiang@gmail.com</p>
-                <p><i class="fas fa-phone"></i> 016-6663283</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/profile.php?id=100009004393512"><i class="fab fa-facebook"></i></a>
-                    <a href="https://x.com/ChongWenXiang1"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/chongwenxiang1025/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/chong-wen-xiang-6b2222283/"><i class="fab fa-linkedin"></i></a>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> chong4wenxiang@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 016-6663283</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009004393512"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/ChongWenXiang1"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/chongwenxiang1025/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chong-wen-xiang-6b2222283/"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                    <p id="success-message" style="color: #4CAF50; display: none; margin-top: 10px;">Hello, your message has been successfully sent!</p>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <p id="success-message" style="color: #4CAF50; display: none; margin-top: 10px;">Hello, your
+                            message has been successfully sent!</p>
 
-                </form>
-                
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
-//header small screen
-document.addEventListener("DOMContentLoaded", function () {
-    const nav = document.querySelector("nav");
-    const navUl = document.querySelector("nav ul");
-    const toggleButton = document.createElement("div");
+    <button id="backToTop" title="Back to top">&#8593;</button>
 
-    toggleButton.classList.add("menu-toggle");
-    toggleButton.innerHTML = "&#9776;"; // Hamburger icon
+    <script>
+        //header small screen
+        document.addEventListener("DOMContentLoaded", function () {
+            const nav = document.querySelector("nav");
+            const navUl = document.querySelector("nav ul");
+            const toggleButton = document.createElement("div");
 
-    toggleButton.addEventListener("click", function () {
-        nav.classList.toggle("active");
-    });
+            toggleButton.classList.add("menu-toggle");
+            toggleButton.innerHTML = "&#9776;"; // Hamburger icon
 
-    nav.insertBefore(toggleButton, nav.firstChild);
+            toggleButton.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
 
-    // Ensure menu is hidden on resize
-    window.addEventListener("resize", function () {
-        if (window.innerWidth > 768) {
-            nav.classList.remove("active");
+            nav.insertBefore(toggleButton, nav.firstChild);
+
+            // Ensure menu is hidden on resize
+            window.addEventListener("resize", function () {
+                if (window.innerWidth > 768) {
+                    nav.classList.remove("active");
+                }
+            });
+        });
+
+        //about me
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-    });
-});
 
-//about me
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+        //koinonia.cloud module tabs (inside the portfolio card)
+        // Maps each module to its uploaded screenshot(s): k1 onboarding, k2 chat, k3-k4 event, k5 post, k6 group
+        const koinoniaModuleImages = {
+            "mod-onboarding": "images/k1.png",
+            "mod-chat": "images/k2.png",
+            "mod-event": "images/k3.png",
+            "mod-group": "images/k6.png",
+            "mod-post": "images/k5.png"
+        };
 
-function opentab(tabname) {
-    for (let tablink of tablinks) {
-        tablink.classList.remove("active-link");
-    }
-    for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
+        function openModuleTab(evt, moduleId) {
+            const links = document.querySelectorAll(".module-tab-links");
+            const contents = document.querySelectorAll(".module-tab-contents");
 
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
+            links.forEach(link => link.classList.remove("active-module-link"));
+            contents.forEach(content => content.classList.remove("active-module-tab"));
 
-//projects for portfolio
-const projects = [
-    ["images/sc1.png", "images/sc2.png"], // Project 1 images
-    ["images/p1.png", "images/p2.png", "images/p3.png", "images/p4.png", "images/p5.png", "images/p6.png", "images/p7.png", "images/p8.png", "images/p9.png", "images/p10.png"],  // Project 2 images
-    ["images/t1.png", "images/t2.png", "images/t3.png", "images/t5.png"],
-    ["images/e1.png", "images/e2.png"],
-    ["images/f1.png", "images/f2.png", "images/f3.png", "images/f4.png", "images/f5.png", "images/f6.png"]
-];
+            evt.currentTarget.classList.add("active-module-link");
+            document.getElementById(moduleId).classList.add("active-module-tab");
 
-// Select all .portfolio .row elements to ensure we're only working with the portfolio section
-document.querySelectorAll("#portfolio .row").forEach((row, index) => {
-    let images = projects[index]; 
-    let currentIndex = 0;
-    const projectImage = row.querySelector(".projectImage");
-
-    if (!images) return; // Ensure there's an image set for the project
-
-    // Apply transition to the image for smooth transition effect
-    projectImage.style.transition = "opacity 0.3s ease-in-out"; // Faster transition
-
-    // Detect mouse click position
-    projectImage.addEventListener("click", function (event) {
-        const imageWidth = projectImage.offsetWidth;
-        const clickPosition = event.clientX; // Get the X coordinate of the click
-
-        // Fade out image for a smoother transition
-        projectImage.style.opacity = "0"; 
-
-        setTimeout(() => {
-            // If clicked on the left side of the image
-            if (clickPosition < imageWidth / 2) {
-                currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-            } else {
-                // If clicked on the right side of the image
-                currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            // Sync the Koinonia carousel image with the selected module
+            const koinoniaRow = document.querySelector('.row[data-category="koinonia"]');
+            const targetImage = koinoniaModuleImages[moduleId];
+            if (koinoniaRow && targetImage) {
+                const img = koinoniaRow.querySelector(".projectImage");
+                img.style.opacity = "0";
+                setTimeout(() => {
+                    img.src = targetImage;
+                    img.style.opacity = "1";
+                }, 200);
             }
+        }
 
-            projectImage.src = images[currentIndex]; // Update the image
+        //portfolio filter bar
+        document.addEventListener("DOMContentLoaded", () => {
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            const projectRows = document.querySelectorAll(".projects-list .row");
 
-            // Fade the image back in after the change
-            setTimeout(() => {
-                projectImage.style.opacity = "1"; // Fade in
-            }, 50); // Slight delay to allow image to change before fading in
-        }, 250); // Delay for the fade out effect
-    });
-});
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
 
-document.addEventListener("DOMContentLoaded", () => {
-    const animatedElements = document.querySelectorAll(
-        "#portfolio, .portfolio-col-1, .portfolio-col-2, .carousel, .projectImage, .projectVideo"
-    );
+                    const filter = btn.dataset.filter;
+                    projectRows.forEach(row => {
+                        if (filter === "all" || row.dataset.category === filter) {
+                            row.style.display = "flex";
+                        } else {
+                            row.style.display = "none";
+                        }
+                    });
+                });
+            });
+        });
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.animationPlayState = "running";
-                observer.unobserve(entry.target); // Only animate once
+        //back to top button
+        window.addEventListener("scroll", () => {
+            const backToTop = document.getElementById("backToTop");
+            if (window.scrollY > 400) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
             }
         });
-    }, {
-        threshold: 0.1
-    });
 
-    animatedElements.forEach(el => {
-        observer.observe(el);
-    });
-});
-
-document.querySelectorAll("#portfolio .row").forEach((row, index) => {
-    let images = projects[index];
-    let currentIndex = 0;
-    const projectImage = row.querySelector(".projectImage");
-    const dotsContainer = row.querySelector(".dots-container");
-
-    if (!images) return; // Ensure there's an image set for the project
-
-    // Create dots dynamically based on the number of images
-    images.forEach((_, i) => {
-        const dot = document.createElement("span");
-        dot.classList.add("dot");
-        dotsContainer.appendChild(dot);
-    });
-
-    const dots = dotsContainer.querySelectorAll(".dot");
-    dots[currentIndex].classList.add("active"); // Set the first dot as active
-
-    // Apply transition to the image for smooth transition effect
-    projectImage.style.transition = "opacity 0.3s ease-in-out"; // Faster transition
-
-    // Detect mouse click position on the image
-    projectImage.addEventListener("click", function (event) {
-        const imageWidth = projectImage.offsetWidth;
-        const clickPosition = event.clientX; // Get the X coordinate of the click
-
-        // Fade out image for a smoother transition
-        projectImage.style.opacity = "0"; 
-
-        setTimeout(() => {
-            // If clicked on the left side of the image
-            if (clickPosition < imageWidth / 2) {
-                currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-            } else {
-                // If clicked on the right side of the image
-                currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-            }
-
-            projectImage.src = images[currentIndex]; // Update the image
-
-            // Update the active dot
-            dots.forEach(dot => dot.classList.remove("active"));
-            dots[currentIndex].classList.add("active");
-
-            // Fade the image back in after the change
-            setTimeout(() => {
-                projectImage.style.opacity = "1"; // Fade in
-            }, 50); // Slight delay to allow image to change before fading in
-        }, 250); // Delay for the fade-out effect
-    });
-
-    // Handle dot click event
-    dots.forEach((dot, dotIndex) => {
-        dot.addEventListener("click", function () {
-            currentIndex = dotIndex; // Update to the index of the clicked dot
-            projectImage.src = images[currentIndex]; // Update the image
-
-            // Update active dot styling
-            dots.forEach(dot => dot.classList.remove("active"));
-            dot.classList.add("active"); // Highlight the clicked dot
+        document.getElementById("backToTop").addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
         });
-    });
-});
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxrE9wzPVVq_QAnXtQsNiKXMnmZa7gbHdgaZQ9MVV4E7BtRNTYl7YJOAoGMVSB1JgRI/exec';
-const form = document.forms['submit-to-google-sheet'];
-const successMessage = document.getElementById("success-message");
+        //projects for portfolio
+        const projects = [
+            ["images/sc1.png", "images/sc2.png"], // Project 1 - Science Video Platform
+            ["images/p1.png", "images/p2.png", "images/p3.png", "images/p4.png", "images/p5.png", "images/p6.png", "images/p7.png", "images/p8.png", "images/p9.png", "images/p10.png"], // Project 2 - Budget Management App
+            ["images/t1.png", "images/t2.png", "images/t3.png", "images/t5.png"], // Project 3 - YouTube AI Summary Short Generator
+            ["images/e1.png", "images/e2.png"], // Project 4 - Online Book Store
+            ["images/f1.png", "images/f2.png", "images/f3.png", "images/f4.png", "images/f5.png", "images/f6.png"], // Project 5 - Face Recognition
+            ["images/k1.png", "images/k2.png", "images/k3.png", "images/k4.png", "images/k5.png", "images/k6.png"] // Project 6 - Koinonia.cloud (k1 onboarding, k2 chat, k3-k4 event, k5 post, k6 group)
+        ];
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            console.log('Success!', response);
-            successMessage.style.display = "block"; // Show success message
-            form.reset(); // Clear the form fields after submission
-            setTimeout(() => {
-                successMessage.style.display = "none"; // Hide message after 5 sec
-            }, 5000);
-        })
-        .catch(error => console.error('Error!', error.message));
-});
+        // Select all .portfolio .row elements to ensure we're only working with the portfolio section
+        document.querySelectorAll("#portfolio .row").forEach((row, index) => {
+            let images = projects[index];
+            let currentIndex = 0;
+            const projectImage = row.querySelector(".projectImage");
 
-function opentab(tabName) {
-    const tabLinks = document.querySelectorAll(".tab-links");
-    const tabContents = document.querySelectorAll(".tab-contents");
+            if (!images) return; // Ensure there's an image set for the project
 
-    // Remove 'active' classes
-    tabLinks.forEach(link => link.classList.remove("active-link"));
-    tabContents.forEach(content => {
-        content.classList.remove("active-tab");
-        content.style.display = "none"; // Hide all tabs first
-    });
+            // Apply transition to the image for smooth transition effect
+            projectImage.style.transition = "opacity 0.3s ease-in-out"; // Faster transition
 
-    // Show selected tab
-    const targetTab = document.getElementById(tabName);
-    targetTab.style.display = "block"; // Must be visible before animation runs
-    void targetTab.offsetWidth; // Force reflow to restart animation
-    targetTab.classList.add("active-tab");
+            // Detect mouse click position
+            projectImage.addEventListener("click", function (event) {
+                const imageWidth = projectImage.offsetWidth;
+                const clickPosition = event.clientX; // Get the X coordinate of the click
 
-    // Activate clicked link
-    const clickedLink = Array.from(tabLinks).find(link => link.textContent.toLowerCase().includes(tabName.toLowerCase()));
-    if (clickedLink) clickedLink.classList.add("active-link");
-}
+                // Fade out image for a smoother transition
+                projectImage.style.opacity = "0";
 
-var typed = new Typed('#typed-role', {
-    strings: ['Web Developer', 'Frontend Developer', 'Backend Developer','Software Developer'],
-    typeSpeed: 60,
-    backSpeed: 40,
-    backDelay: 1000,
-    loop: true
-  });
+                setTimeout(() => {
+                    // If clicked on the left side of the image
+                    if (clickPosition < imageWidth / 2) {
+                        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+                    } else {
+                        // If clicked on the right side of the image
+                        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+                    }
 
-  window.onload = function() {
-        window.scrollTo(0, 0);
-    };
+                    projectImage.src = images[currentIndex]; // Update the image
 
-</script>
+                    // Fade the image back in after the change
+                    setTimeout(() => {
+                        projectImage.style.opacity = "1"; // Fade in
+                    }, 50); // Slight delay to allow image to change before fading in
+                }, 250); // Delay for the fade out effect
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const animatedElements = document.querySelectorAll(
+                "#portfolio, .portfolio-col-1, .portfolio-col-2, .carousel, .projectImage, .projectVideo"
+            );
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = "running";
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        document.querySelectorAll("#portfolio .row").forEach((row, index) => {
+            let images = projects[index];
+            let currentIndex = 0;
+            const projectImage = row.querySelector(".projectImage");
+            const dotsContainer = row.querySelector(".dots-container");
+
+            if (!images) return; // Ensure there's an image set for the project
+
+            // Create dots dynamically based on the number of images
+            images.forEach((_, i) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = dotsContainer.querySelectorAll(".dot");
+            dots[currentIndex].classList.add("active"); // Set the first dot as active
+
+            // Apply transition to the image for smooth transition effect
+            projectImage.style.transition = "opacity 0.3s ease-in-out"; // Faster transition
+
+            // Detect mouse click position on the image
+            projectImage.addEventListener("click", function (event) {
+                const imageWidth = projectImage.offsetWidth;
+                const clickPosition = event.clientX; // Get the X coordinate of the click
+
+                // Fade out image for a smoother transition
+                projectImage.style.opacity = "0";
+
+                setTimeout(() => {
+                    // If clicked on the left side of the image
+                    if (clickPosition < imageWidth / 2) {
+                        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+                    } else {
+                        // If clicked on the right side of the image
+                        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+                    }
+
+                    projectImage.src = images[currentIndex]; // Update the image
+
+                    // Update the active dot
+                    dots.forEach(dot => dot.classList.remove("active"));
+                    dots[currentIndex].classList.add("active");
+
+                    // Fade the image back in after the change
+                    setTimeout(() => {
+                        projectImage.style.opacity = "1"; // Fade in
+                    }, 50); // Slight delay to allow image to change before fading in
+                }, 250); // Delay for the fade-out effect
+            });
+
+            // Handle dot click event
+            dots.forEach((dot, dotIndex) => {
+                dot.addEventListener("click", function () {
+                    currentIndex = dotIndex; // Update to the index of the clicked dot
+                    projectImage.src = images[currentIndex]; // Update the image
+
+                    // Update active dot styling
+                    dots.forEach(dot => dot.classList.remove("active"));
+                    dot.classList.add("active"); // Highlight the clicked dot
+                });
+            });
+        });
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxrE9wzPVVq_QAnXtQsNiKXMnmZa7gbHdgaZQ9MVV4E7BtRNTYl7YJOAoGMVSB1JgRI/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const successMessage = document.getElementById("success-message");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    console.log('Success!', response);
+                    successMessage.style.display = "block"; // Show success message
+                    form.reset(); // Clear the form fields after submission
+                    setTimeout(() => {
+                        successMessage.style.display = "none"; // Hide message after 5 sec
+                    }, 5000);
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+
+        var typed = new Typed('#typed-role', {
+            strings: ['Web Developer', 'Frontend Developer', 'Backend Developer', 'Software Developer'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 1000,
+            loop: true
+        });
+
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        };
+
+    </script>
 </body>
+
 </html>
