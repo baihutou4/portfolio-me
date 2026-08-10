@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chong Wen Xiang Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -16,42 +21,55 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="images/logo.png" class="logo" alt="Chong Wen Xiang logo">
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="resume.pdf" download>Resume</a></li>
+                    <li><a href="resume.pdf" download class="nav-cta">Resume</a></li>
                 </ul>
 
             </nav>
+
             <div class="header-text animate-slide-top delay-1">
-                <h1>
-                    Hi, I'm Chong Wen Xiang<br>
-                    from Johor Bahru <br>
-                    I'm a <span id="typed-role"></span>
-                </h1>
+                <div class="terminal-window">
+                    <div class="terminal-bar">
+                        <span class="terminal-dot dot-red"></span>
+                        <span class="terminal-dot dot-yellow"></span>
+                        <span class="terminal-dot dot-green"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <h1>
+                            Hi, I'm Chong Wen Xiang<br>
+                            from Johor Bahru <br>
+                            I'm a <span id="typed-role"></span>
+                        </h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div id="about">
         <div class="container">
+            <p class="eyebrow">01 — About</p>
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/CHONG WEN XIANG.jpg">
+                    <img src="images/CHONG WEN XIANG.jpg" alt="Photo of Chong Wen Xiang">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Dedicated and skilled Web Developer with a strong foundation in
-                        computer science and a proven capability in building innovative web
-                        applications. Possessing hands-on experience in various programming
-                        languages and technologies, I am passionate about leveraging my skills
-                        in JavaScript, Python, and AWS to drive high-quality web development
-                        solutions. A strong communicator who is a hard worker and fluent in
-                        both Chinese and English, I thrive in collaborative environments and am
-                        keen to contribute to impactful projects.</p>
+                    <p>Junior Fullstack Developer with a strong foundation in
+                        computer science and hands-on experience shipping production web
+                        applications. My day-to-day work spans serverless backends on
+                        <strong>AWS Lambda</strong> with <strong>AWS Cognito</strong> authentication, and
+                        payment flows built on <strong>Stripe</strong> — from checkout and
+                        subscriptions to refunds and Stripe Connect payouts. A strong
+                        communicator who is a hard worker and fluent in both Chinese and
+                        English, I thrive in collaborative environments and am keen to
+                        contribute to impactful projects.
+                    </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -66,47 +84,70 @@
                             <li>
                                 <span>Language</span>
                                 <div class="skill-tags">
-                                    <span class="skill-tag">HTML</span>
-                                    <span class="skill-tag">CSS</span>
-                                    <span class="skill-tag">JavaScript</span>
-                                    <span class="skill-tag">Java</span>
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">C++</span>
-                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag tag-lang">HTML</span>
+                                    <span class="skill-tag tag-lang">CSS</span>
+                                    <span class="skill-tag tag-lang">JavaScript</span>
+                                    <span class="skill-tag tag-lang">Java</span>
+                                    <span class="skill-tag tag-lang">Python</span>
+                                    <span class="skill-tag tag-lang">C++</span>
+                                    <span class="skill-tag tag-lang">Node.js</span>
                                 </div>
                             </li>
                             <li>
                                 <span>Frameworks & Tools</span>
                                 <div class="skill-tags">
-                                    <span class="skill-tag">React.js</span>
-                                    <span class="skill-tag">Next.js</span>
-                                    <span class="skill-tag">Nest.js</span>
-                                    <span class="skill-tag">GraphQL</span>
-                                    <span class="skill-tag">Relay</span>
-                                    <span class="skill-tag">Prisma</span>
-                                    <span class="skill-tag">Kysely</span>
-                                    <span class="skill-tag">Docker</span>
-                                    <span class="skill-tag">Tailwind CSS</span>
+                                    <span class="skill-tag tag-framework">React.js</span>
+                                    <span class="skill-tag tag-framework">Next.js</span>
+                                    <span class="skill-tag tag-framework">Nest.js</span>
+                                    <span class="skill-tag tag-framework">GraphQL</span>
+                                    <span class="skill-tag tag-framework">Relay</span>
+                                    <span class="skill-tag tag-framework">Prisma</span>
+                                    <span class="skill-tag tag-framework">Kysely</span>
+                                    <span class="skill-tag tag-framework">Tailwind CSS</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Cloud & Backend</span>
+                                <div class="skill-tags">
+                                    <span class="skill-tag tag-cloud">AWS Lambda</span>
+                                    <span class="skill-tag tag-cloud">AWS Cognito</span>
+                                    <span class="skill-tag tag-cloud">AWS</span>
+                                    <span class="skill-tag tag-cloud">Docker</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Payments</span>
+                                <div class="skill-tags">
+                                    <span class="skill-tag tag-payments">Stripe Payments</span>
+                                    <span class="skill-tag tag-payments">Stripe Refunds</span>
+                                    <span class="skill-tag tag-payments">Stripe Connect</span>
+                                    <span class="skill-tag tag-payments">Stripe Subscriptions</span>
                                 </div>
                             </li>
                             <li>
                                 <span>AI-Assisted Development</span>
                                 <div class="skill-tags">
-                                    <span class="skill-tag">Claude Code</span>
+                                    <span class="skill-tag tag-ai">Claude Code</span>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experince">
                         <ul>
-                            <li><span>2023 - Internship</span><br>SoftEngine</li>
-                            <li><span>Jul 2025 - Feb 2026</span><br>Junior Fullstack Developer - Crosscode Studio</li>
-                            <li><span>Feb 2026 - Present</span><br>Senior Fullstack Developer - Crosscode Studio</li>
+                            <li>
+                                <span>2023 — Internship</span><br>SoftEngine
+                            </li>
+                            <li>
+                                <span>Jul 2025 — Present</span><br>Junior Fullstack Developer, Crosscode Studio
+                                <p class="exp-desc">Building serverless features on AWS Lambda with Cognito
+                                    authentication, and integrating Stripe payments, subscriptions, refunds &
+                                    Connect payouts.</p>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2022 - 2025</span><br>University Dunkul Abdul Rahman</li>
+                            <li><span>2022 - 2025</span><br>Universiti Tunku Abdul Rahman (UTAR)</li>
                         </ul>
                     </div>
                 </div>
@@ -116,6 +157,7 @@
 
     <div id="portfolio">
         <div class="container">
+            <p class="eyebrow">02 — Work</p>
             <h1 class="sub-title">Portfolio</h1>
 
             <div class="filter-bar">
@@ -282,16 +324,17 @@
                         </div>
 
                         <div class="module-tab-contents active-module-tab" id="mod-onboarding">
-                            <p>Covers the onboarding experience along with sign up and sign in flows, guiding new
-                                members smoothly into their church's community space.</p>
+                            <p>Covers the onboarding experience along with sign up and sign in flows — backed by
+                                AWS Cognito — guiding new members smoothly into their church's community space.</p>
                         </div>
                         <div class="module-tab-contents" id="mod-chat">
                             <p>A real-time chat module letting church members message one another and communicate within
                                 groups, keeping the community connected beyond service hours.</p>
                         </div>
                         <div class="module-tab-contents" id="mod-event">
-                            <p>Handles event questionnaires, member registration, and refund policy management, so
-                                churches can organize and run events end-to-end on the platform.</p>
+                            <p>Handles event questionnaires, member registration, and refund policy management using
+                                Stripe payments and Stripe refunds, so churches can organize and run events
+                                end-to-end on the platform.</p>
                         </div>
                         <div class="module-tab-contents" id="mod-group">
                             <p>Lets churches create and manage community groups, giving members a space to gather around
@@ -316,6 +359,11 @@
                             <li>Kysely</li>
                             <li>Docker</li>
                             <li>Tailwind CSS</li>
+                            <li>AWS Lambda</li>
+                            <li>AWS Cognito</li>
+                            <li>Stripe Payments</li>
+                            <li>Stripe Subscriptions</li>
+                            <li>Stripe Connect</li>
                         </ul>
                     </div>
                 </div>
@@ -329,6 +377,7 @@
     <!-- Contact Section -->
     <div id="contact">
         <div class="container">
+            <p class="eyebrow">03 — Contact</p>
             <div class="contact-content">
                 <div class="contact-left">
                     <h1>Contact Me</h1>
@@ -623,7 +672,7 @@
         });
 
         var typed = new Typed('#typed-role', {
-            strings: ['Web Developer', 'Frontend Developer', 'Backend Developer', 'Software Developer'],
+            strings: ['Junior Fullstack Developer', 'Backend Developer', 'Frontend Developer', 'Cloud & Payments Developer'],
             typeSpeed: 60,
             backSpeed: 40,
             backDelay: 1000,
