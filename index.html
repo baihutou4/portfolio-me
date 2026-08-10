@@ -38,8 +38,10 @@
                         <span class="terminal-dot dot-red"></span>
                         <span class="terminal-dot dot-yellow"></span>
                         <span class="terminal-dot dot-green"></span>
+                        <span class="terminal-filename">wenxiang.dev — zsh</span>
                     </div>
                     <div class="terminal-body">
+                        <p class="terminal-line"><span class="prompt">$</span> whoami</p>
                         <h1>
                             Hi, I'm Chong Wen Xiang<br>
                             from Johor Bahru <br>
@@ -62,10 +64,12 @@
                     <h1 class="sub-title">About Me</h1>
                     <p>Junior Fullstack Developer with a strong foundation in
                         computer science and hands-on experience shipping production web
-                        applications. My day-to-day work spans serverless backends on
-                        <strong>AWS Lambda</strong> with <strong>AWS Cognito</strong> authentication, and
-                        payment flows built on <strong>Stripe</strong> — from checkout and
-                        subscriptions to refunds and Stripe Connect payouts. A strong
+                        applications. I lead end-to-end development across the
+                        <strong>Payments</strong>, <strong>Community</strong>, and <strong>Channel</strong>
+                        modules of a <strong>Next.js + NestJS</strong> community platform — from
+                        <strong>Stripe Connect</strong> multi-party payouts to a <strong>GraphQL</strong>
+                        API and a companion <strong>React Native</strong> app, backed by
+                        <strong>AWS</strong> infrastructure and <strong>Prisma</strong>-managed schemas. A strong
                         communicator who is a hard worker and fluent in both Chinese and
                         English, I thrive in collaborative environments and am keen to
                         contribute to impactful projects.
@@ -139,9 +143,20 @@
                             </li>
                             <li>
                                 <span>Jul 2025 — Present</span><br>Junior Fullstack Developer, Crosscode Studio
-                                <p class="exp-desc">Building serverless features on AWS Lambda with Cognito
-                                    authentication, and integrating Stripe payments, subscriptions, refunds &
-                                    Connect payouts.</p>
+                                <ul class="exp-bullets">
+                                    <li>Lead end-to-end development of core product modules on a Next.js + NestJS
+                                        community platform, including Payments, Community, and Channel modules.</li>
+                                    <li>Built end-to-end payment flows with Stripe Connect, supporting multi-party
+                                        payouts across the platform.</li>
+                                    <li>Building a companion mobile app in React Native on the shared NestJS/GraphQL
+                                        backend, collaborating with the UI/UX team on implementation.</li>
+                                    <li>Migrated the backend from REST to GraphQL, reducing over-fetching and
+                                        improving query flexibility.</li>
+                                    <li>Designed the database schema and managed Prisma migrations; integrated
+                                        Stripe, Google Maps API, and next-intl (i18n) on AWS infrastructure.</li>
+                                    <li>Mentoring junior developers and interns, providing guidance on code quality
+                                        and best practices.</li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -318,6 +333,7 @@
                             <p class="module-tab-links active-module-link"
                                 onclick="openModuleTab(event, 'mod-onboarding')">Onboarding</p>
                             <p class="module-tab-links" onclick="openModuleTab(event, 'mod-chat')">Chat</p>
+                            <p class="module-tab-links" onclick="openModuleTab(event, 'mod-payments')">Payments</p>
                             <p class="module-tab-links" onclick="openModuleTab(event, 'mod-event')">Event</p>
                             <p class="module-tab-links" onclick="openModuleTab(event, 'mod-group')">Group</p>
                             <p class="module-tab-links" onclick="openModuleTab(event, 'mod-post')">Post</p>
@@ -330,6 +346,11 @@
                         <div class="module-tab-contents" id="mod-chat">
                             <p>A real-time chat module letting church members message one another and communicate within
                                 groups, keeping the community connected beyond service hours.</p>
+                        </div>
+                        <div class="module-tab-contents" id="mod-payments">
+                            <p>The Payments module I lead end-to-end: Stripe Connect multi-party payouts so churches
+                                and ministries can receive funds directly, alongside subscriptions and refunds
+                                handled through Stripe.</p>
                         </div>
                         <div class="module-tab-contents" id="mod-event">
                             <p>Handles event questionnaires, member registration, and refund policy management using
@@ -364,6 +385,9 @@
                             <li>Stripe Payments</li>
                             <li>Stripe Subscriptions</li>
                             <li>Stripe Connect</li>
+                            <li>React Native</li>
+                            <li>Google Maps API</li>
+                            <li>next-intl (i18n)</li>
                         </ul>
                     </div>
                 </div>
@@ -455,6 +479,7 @@
         const koinoniaModuleImages = {
             "mod-onboarding": "images/k1.png",
             "mod-chat": "images/k2.png",
+            "mod-payments": "images/k4.png",
             "mod-event": "images/k3.png",
             "mod-group": "images/k6.png",
             "mod-post": "images/k5.png"
